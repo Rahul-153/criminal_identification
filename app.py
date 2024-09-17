@@ -24,7 +24,7 @@ app = Flask(__name__)
 
 UPLOAD_FOLDER = 'static/testA'
 VIDEO_UPLOAD_FOLDER = 'static/videos'
-
+os.makedirs('static', exist_ok=True)
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 os.makedirs(VIDEO_UPLOAD_FOLDER, exist_ok=True)
 
